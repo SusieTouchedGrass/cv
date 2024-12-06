@@ -7,4 +7,9 @@
 .profile-picture img {
     width: 10rem;
     height: auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.profile-picture img:hover {
+    filter: drop-shadow(10px 10px 10px rgb(136, 196, 232));
+    transform: translateY(-5px);
 }
