@@ -304,6 +304,18 @@ hr {
     width: 0;
     transition: width 1s ease-in-out;
 }
+.bar-fill .engels-bar {
+    width: 80%;
+}
+
+.bar-fill .nederlands-bar {
+    width: 90%;
+}
+
+.bar-fill .frans-bar {
+    width: 60%;
+}
+
 
 .bar-percentage {
     position: absolute;
@@ -601,3 +613,92 @@ footer a:hover {
     padding-bottom: 1.5rem;
     color: #2E392D;
 }
+
+@media (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+
+    body {
+        min-height: auto;
+        font-size: 0.5rem;
+        margin: 0 auto;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    header {
+        position: static;
+        grid-area: header;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        border-radius: 0;
+    }
+    main {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        height: auto;
+        background-color: #ffffff;
+    }
+    main section {
+        padding: 0;
+    }
+    header, main {
+        width: 100%;
+    }
+    footer {
+        position: static;
+        padding: 0 0.1rem;
+        margin-top: 3rem;
+        height: auto;
+    }
+    footer li, a {
+        font-size: 0.5rem;
+    }
+    header, main, footer {
+        padding: 0;
+    }
+    main {
+        box-shadow: none;
+    }
+    header, main {
+        width: auto;
+    }
+    .contact li i, .contact li a {
+        font-size: 1.2rem;
+    }
+   .bar {
+        align-items: flex-start;
+   }
+    .bar .bar-graph-container {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .bar-percentage {
+        color: #2E392D;
+    }
+    .bar-label {
+        width: 10rem;
+    }
+
+    .profile-picture img {
+        height: 25rem;
+        width: auto;
+        transition: transform 0.3s ease;
+        border-radius: 1rem;
+    }
+    .social-media {
+        padding-bottom: 1rem;
+    }
+
+}
+
