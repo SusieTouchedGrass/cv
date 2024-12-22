@@ -45,6 +45,9 @@ main ul, main ol, main ul li, main ol li {
     list-style-type: none;
 }
 
+.skills-list {
+    display: none;
+}
 /* Header */
 header {
     position: fixed;
@@ -698,6 +701,28 @@ footer a:hover {
     }
     .social-media {
         padding-bottom: 1rem;
+    }
+    .table-fill {
+        display: none;
+    }
+
+    .skills-list {
+        display: block !important;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills-list li {
+        margin-bottom: 1rem;
+    }
+
+    .skills-list h4 {
+        color: #9FA593;
+        margin-bottom: 0.5rem;
+    }
+
+    .skills-list p {
+        margin: 0.25rem 0;
     }
 
 }
